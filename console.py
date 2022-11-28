@@ -12,7 +12,6 @@ from models.place import Place
 from models.amenity import Amenity
 from models.review import Review
 
-<<<<<<< HEAD
 
 def parse(arg):
     curly_braces = re.search(r"\{(.*?)\}", arg)
@@ -30,14 +29,6 @@ def parse(arg):
         retl = [i.strip(",") for i in lexer]
         retl.append(curly_braces.group())
         return retl
-=======
-class HBNBCommand(cmd.Cmd):
-    """ General Class for HBNBCommand """
-    prompt = '(hbnb) '
-    classes = {'BaseModel': BaseModel, 'User': User, 'City': City,
-               'Place': Place, 'Amenity': Amenity, 'Review': Review,
-               'State': State}
->>>>>>> 0d21aca0931d4da08d327495cb556a7917944199
 
 
 class HBNBCommand(cmd.Cmd):
